@@ -1,0 +1,5 @@
+smtp:
+  email:
+    username: foodev
+    password: secretdev
+    contentlength: 300

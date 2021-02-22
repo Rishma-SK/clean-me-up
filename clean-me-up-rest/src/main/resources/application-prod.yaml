@@ -1,0 +1,5 @@
+smtp:
+  email:
+    username: fooprod
+    password: secretprod
+    contentlength: 6500
