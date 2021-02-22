@@ -15,26 +15,6 @@ You should clean/refactor as much OR as little as you like.  The objective of th
 Show us your skills!
 
 
-
-## View the application using Swagger 2 API 
-
-Run the server and browse to
-
-````````````````````````````````````````````
-    http://localhost:8083/swagger-ui.html
-    
-````````````````````````````````````````````
-
-## Sample Valid JSON Request Body
-
-```json
-{
-	"to_address": "rishma88@gmail.com",
-	"subject": "Test Email",
-	"content": "Welcome to Code clean up test"
-}
-```
-
 ## Changes made to the clean-me-up project 
 
 ````````````````````````````````````````````
@@ -64,6 +44,7 @@ Run the server and browse to
 1. Securing the application with Spring Security
 2. Actual implementation to send email using Java MailAPI. 
 3. Real-time use case of sending email on user registration
+4. Persistance into Database for sending email via JMS implementation
 
 ````````````````````````````````````````````
 
@@ -85,6 +66,27 @@ docker build -f Dockerfile -t docker-emailapi:1.1 .
 docker run -p 8083:8083 docker-emailapi:1.1
 
 ````````````````````````````````````````````
+
+## View the application using Swagger 2 API 
+
+Run the server and browse to
+
+````````````````````````````````````````````
+    http://localhost:8083/swagger-ui.html
+    
+````````````````````````````````````````````
+
+## Sample Valid JSON Request Body
+
+````````````````````````````````````````````````````````
+```json
+{
+	"to_address": "rishma88@gmail.com",
+	"subject": "Test Email",
+	"content": "Welcome to Code clean up test"
+}
+```
+`````````````````````````````````````````````````````````
 
 ## Commands to tag and push the image to Remote repository
 ````````````````````````````````````````````
